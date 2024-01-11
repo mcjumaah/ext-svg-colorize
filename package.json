@@ -1,0 +1,45 @@
+{
+	"name": "@mcjumaah/ext-svg-colorize",
+	"description": "Easy way of changing external SVGs' color",
+	"version": "1.0.0",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/ext-svg-colorize.umd.js",
+	"module": "./dist/ext-svg-colorize.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/ext-svg-colorize.es.js",
+			"require": "./dist/ext-svg-colorize.umd.js"
+		},
+		"./dist/style.css": "./dist/style.css"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.3.11"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^4.5.2",
+		"vite": "^5.0.8"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mcjumaah/ext-svg-colorize.git"
+	},
+	"keywords": [
+		"svg",
+		"nuxt",
+		"color"
+	],
+	"author": "Mark Jumar Perez",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mcjumaah/ext-svg-colorize/issues"
+	},
+	"homepage": "https://github.com/mcjumaah/ext-svg-colorize#readme"
+}
