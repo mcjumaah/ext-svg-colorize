@@ -7,10 +7,10 @@
 		"dist"
 	],
 	"main": "./dist/ext-svg-colorize.umd.js",
-	"module": "./dist/ext-svg-colorize.es.js",
+	"module": "./dist/ext-svg-colorize.js",
 	"exports": {
 		".": {
-			"import": "./dist/ext-svg-colorize.es.js",
+			"import": "./dist/ext-svg-colorize.js",
 			"require": "./dist/ext-svg-colorize.umd.js"
 		},
 		"./dist/style.css": "./dist/style.css"

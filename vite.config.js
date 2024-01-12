@@ -8,7 +8,9 @@ export default defineConfig({
 		lib: {
 			entry: path.resolve(__dirname, "src/index.js"),
 			name: "ext-svg-colorize",
-			fileName: (format) => `${format}.js`,
+			fileName(format) {
+				return `${this.name}.${format}.js`;
+			},
 		},
 		rollupOptions: {
 			external: ["vue"],
