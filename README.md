@@ -1,6 +1,6 @@
 # ext-svg-colorize
 
-A Nuxt layer for an easy way of changing external SVGs' color.
+Easy way of changing external SVGs' color.
 
 This template should help get you started developing with Vue 3 in Vite.
 
