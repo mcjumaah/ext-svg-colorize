@@ -6,46 +6,45 @@ https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
 #
 This template should help get you started developing with Vue 3 in Vite.
+## Get started
 
-## Recommended IDE Setup
+**External SVG Colorizer**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Install:
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+npm install @mcjumaah/ext-svg-colorizer
 ```
 
-### Compile and Hot-Reload for Development
+Then, import and register the component.
 
-```sh
-npm run dev
+The component itself does not include any CSS. You'll need to include it separately for the component to work properly:
+
+```js
+# main.ts or main.js
+
+import { createApp } from "vue";
+import App from "./App.vue";
+
+import ExtSvgColorize from "@mcjumaah/ext-svg-colorize";
+import "@mcjumaah/ext-svg-colorize/styles.css";
+
+createApp(App)
+    .use(ExtSvgColorize);
+    .mount("#app");
 ```
 
-### Type-Check, Compile and Minify for Production
+It is recommended to pass the SVG file to the component in this method:
 
-```sh
-npm run build
-```
+```js
+# app.vue
+<script setup>
+import SampleSvg from "./assets/sample.svg";
+</script>
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+<template>
+	<div>
+   	<ExtSvgColorize :src="SampleSvg" color="black" />
+	</div>
+</template>
 ```
