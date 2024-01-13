@@ -1,6 +1,6 @@
 # ext-svg-colorize
 
-Easy way of changing external SVGs' color.
+Vue component to easily change external SVGs' color.
 
 This template should help get you started developing with Vue 3 in Vite.
 
