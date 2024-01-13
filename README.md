@@ -36,7 +36,7 @@ createApp(App)
 
 It is recommended to pass the SVG file to the component in this method:
 
-```js
+```vue
 # app.vue
 <script setup>
 import SampleSvg from "./assets/sample.svg";
