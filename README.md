@@ -4,6 +4,7 @@ Vue component to easily change external SVGs' color.
 
 https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
+#
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
