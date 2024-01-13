@@ -21,7 +21,7 @@ Then, import and register the component.
 The component itself does not include any CSS. You'll need to include it separately for the component to work properly:
 
 ```js
-# main.ts or main.js
+// main.ts or main.js
 
 import { createApp } from "vue";
 import App from "./App.vue";
@@ -37,8 +37,8 @@ createApp(App)
 It is recommended to pass the SVG file to the component in this method:
 
 ```vue
-# app.vue
 <script setup>
+// app.vue
 import SampleSvg from "./assets/sample.svg";
 </script>
 
