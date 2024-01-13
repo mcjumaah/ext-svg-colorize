@@ -2,7 +2,6 @@
 	"name": "@mcjumaah/ext-svg-colorize",
 	"description": "Easy way of changing external SVGs' color",
 	"version": "1.0.0",
-	"private": true,
 	"type": "module",
 	"exports": {
 		".": "./dist/index.js",
