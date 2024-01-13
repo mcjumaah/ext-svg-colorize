@@ -44,7 +44,7 @@ import SampleSvg from "./assets/sample.svg";
 
 <template>
 	<div>
-   	<ExtSvgColorize :src="SampleSvg" color="black" />
+	   	<ExtSvgColorize :src="SampleSvg" color="black" />
 	</div>
 </template>
 ```
