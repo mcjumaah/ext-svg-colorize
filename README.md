@@ -5,7 +5,9 @@ Vue component to easily change external SVGs' color.
 https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
 #
+
 This template should help get you started developing with Vue 3 in Vite.
+
 ## Get started
 
 **External SVG Colorizer**
@@ -44,7 +46,17 @@ import SampleSvg from "./assets/sample.svg";
 
 <template>
 	<div>
-	   	<ExtSvgColorize :src="SampleSvg" color="black" />
+		<ExtSvgColorize :src="SampleSvg" color="black" />
 	</div>
 </template>
 ```
+
+### Props
+
+| Prop        | Description                               | Type                      | Default |
+| ----------- | ----------------------------------------- | ------------------------- | ------- |
+| src         | external SVG file's path (REQUIRED)       | './path/of/your/file.svg' | -       |
+| customClass | custom class                              | `string`                  | -       |
+| color       | new color to apply for the SVG file       | `string`                  | -       |
+| width       | new width size to apply for the SVG file  | `number`                  | 40      |
+| height      | new height size to apply for the SVG file | `number`                  | 40      |
