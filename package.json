@@ -1,7 +1,7 @@
 {
 	"name": "@mcjumaah/ext-svg-colorize",
-	"description": "Easy way of changing external SVGs' color",
-	"version": "1.0.1",
+	"description": "Vue component to easily change external SVGs' color",
+	"version": "1.0.3",
 	"type": "module",
 	"exports": {
 		".": "./dist/index.js",

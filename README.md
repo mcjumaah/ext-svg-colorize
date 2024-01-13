@@ -4,9 +4,10 @@ Vue component to easily change external SVGs' color.
 
 https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
-#
+# Note:
 
-This template should help get you started developing with Vue 3 in Vite.
+- Only applies one color, can't apply multiple colors
+- If the original SVG file have multiple colors, it will be masked over with one color instead
 
 ## Get started
 
