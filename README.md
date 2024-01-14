@@ -11,12 +11,12 @@ https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
 ## Get started
 
-**External SVG Colorizer**
+**External SVG Colorize**
 
 Install:
 
 ```bash
-npm install @mcjumaah/ext-svg-colorizer
+npm install @mcjumaah/ext-svg-colorize
 ```
 
 Then, import and register the component.

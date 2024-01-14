@@ -26,9 +26,9 @@ export default defineConfig({
 	build: {
 		cssCodeSplit: false,
 		lib: {
-			entry: "./src/ViewerPlugin.ts",
+			entry: "./src/ExtSvgColorizePlugin.ts",
 			formats: ["es", "cjs", "umd"],
-			name: "ViewerPlugin",
+			name: "ExtSvgColorizePlugin",
 			fileName: (format) => (format === "es" ? "index.js" : format === "cjs" ? "index.cjs" : "index.umd.js"),
 		},
 		rollupOptions: {
