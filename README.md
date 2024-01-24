@@ -8,6 +8,12 @@ https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
 When we use external SVG files, we need to use the <img> tag to insert the SVG. The problem with the HTML IMG tag is that we can't its color with the typical use of CSS, e.g. changing the `color:` property.
 
+### Reference
+
+My reference to the approach I utilized in this component is the article by Hasan TEZCAN:
+
+- https://dev.to/hasantezcan/how-to-colorize-svg-image-1kc8
+
 ### Note:
 
 - Only applies one color, can't apply multiple colors
@@ -65,7 +71,3 @@ import SampleSvg from "./assets/sample.svg";
 | color       | new color to apply for the SVG file       | `string`                  | -       |
 | width       | new width size to apply for the SVG file  | `number`                  | 40      |
 | height      | new height size to apply for the SVG file | `number`                  | 40      |
-
-### Reference:
-
-- https://dev.to/hasantezcan/how-to-colorize-svg-image-1kc8
