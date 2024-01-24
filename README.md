@@ -1,8 +1,12 @@
 # ext-svg-colorize
 
-Vue component to easily change external SVGs' color.
+Vue component to easily change external SVGs' color. This component utilizes CSS masking to apply colors to an SVG file.
 
 https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
+
+### The Problem:
+
+When we use external SVG files, we need to use the <img> tag to insert the SVG. The problem with the HTML IMG tag is that we can't its color with the typical use of CSS, e.g. changing the `color:` property.
 
 ### Note:
 
@@ -61,3 +65,7 @@ import SampleSvg from "./assets/sample.svg";
 | color       | new color to apply for the SVG file       | `string`                  | -       |
 | width       | new width size to apply for the SVG file  | `number`                  | 40      |
 | height      | new height size to apply for the SVG file | `number`                  | 40      |
+
+### Reference:
+
+- https://dev.to/hasantezcan/how-to-colorize-svg-image-1kc8
