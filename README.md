@@ -6,7 +6,7 @@ https://www.npmjs.com/package/@mcjumaah/ext-svg-colorize
 
 ### The Problem:
 
-When we use external SVG files, we need to use the <img> tag to insert the SVG. The problem with the HTML IMG tag is that we can't its color with the typical use of CSS, e.g. changing the `color:` property.
+When we use external SVG files, we need to use the HTML `<img>` tag to insert the SVG. The problem with the `<img>` tag is that we can't change its color with the typical use of CSS, e.g. changing the `color:`  property.
 
 ### Reference
 
